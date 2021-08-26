@@ -11,6 +11,7 @@ module "bastion" {
   subnet_id = "subnet-id"
   instance_type = "t3.micro"
   key_pair_name = "test"
+  ebs_optimized = true
   security_group_rules = [
     {
       cidr_blocks = ["0.0.0.0/0"],
