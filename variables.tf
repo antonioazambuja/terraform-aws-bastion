@@ -23,6 +23,11 @@ variable "key_pair_name" {
   type        = string
 }
 
+variable "ebs_optimized" {
+  description = "EBS Optimized"
+  type        = bool
+}
+
 variable "security_group_tags" {
   description = "A map of tags to assign to the AWS Security Group."
   type        = map
